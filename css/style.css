@@ -1,3 +1,67 @@
-nav lifestyle {
-  color: 626262;
+:root {
+  --grey-color: #626262;
+  --accent-color: #03a9f3;
+  --white-color: #fff;
+  --active-color: #ff0000;
+  --line-height: 1.7;
 }
+body {
+  background-color: #ffffff;
+  color: var(--grey-color);
+  font-family: 'Playfair Display', serif;
+}
+.navlink-style {
+  font-size: 14px;
+  line-height: var(--line-height);
+  text-decoration: none;
+  color: var(--accent-color);
+}
+.navlink-style:hover,
+.navlink-style:focus {
+  color: var(--grey-color);
+}
+.navlink-photodiary,
+.navlink-music,
+.navlink-travel {
+  font-size: 14px;
+  line-height: var(--line-height);
+  text-decoration: none;
+  color: var(--grey-color);
+}
+/*Active*/
+.navlink-style:active {
+  color: var(--active-color);
+}
+.navlink-photodiary:active {
+  color: var(--active-color);
+}
+.navlink-music:active {
+  color: var(--active-color);
+}
+.navlink-travel:active {
+  color: var(--active-color);
+}
+.paragraph-style,
+.paragraph-photodiary {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgba(98, 98, 98, 0.5);
+}
+.title {
+  font-size: 30px;
+  font-weight: 400;
+}
+.text {
+  font-size: 14px;
+  line-height: var(--line-height);
+}
+.button {
+  font-size: 20px;
+  line-height: 1.2;
+}
+/*
+  letter-spacing:normal;
+  font-style: normal;
+  font-weight: 400;
+  text-lagin:center;*/
