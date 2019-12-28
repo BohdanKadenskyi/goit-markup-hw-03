@@ -4,21 +4,38 @@
   --white-color: #fff;
   --active-color: #ff0000;
   --line-height: 1.7;
+  --font-family: 'Playfair Display', serif;
 }
 body {
   background-color: #ffffff;
   color: var(--grey-color);
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-family);
 }
+
+/*HOVER FOCUS*/
+.navlink-style:hover,
+.navlink-style:focus {
+  color: var(--grey-color);
+}
+.navlink-photodiary:hover,
+.navlink-photodiary:focus {
+  color: var(--accent-color);
+}
+.navlink-music:hover,
+.navlink-music:focus {
+  color: var(--accent-color);
+}
+.navlink-travel:hover,
+.navlink-travel:focus {
+  color: var(--accent-color);
+}
+
+/* NAVLINKS*/
 .navlink-style {
   font-size: 14px;
   line-height: var(--line-height);
   text-decoration: none;
   color: var(--accent-color);
-}
-.navlink-style:hover,
-.navlink-style:focus {
-  color: var(--grey-color);
 }
 .navlink-photodiary,
 .navlink-music,
@@ -28,7 +45,8 @@ body {
   text-decoration: none;
   color: var(--grey-color);
 }
-/*Active*/
+
+/*ACTIVE*/
 .navlink-style:active {
   color: var(--active-color);
 }
@@ -41,27 +59,34 @@ body {
 .navlink-travel:active {
   color: var(--active-color);
 }
+
 .paragraph-style,
 .paragraph-photodiary {
   font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
+  line-height: 1.2;
   text-transform: uppercase;
-  color: rgba(98, 98, 98, 0.5);
+  color: #b4ad9e;
 }
+
 .title {
   font-size: 30px;
   font-weight: 400;
 }
+
 .text {
   font-size: 14px;
   line-height: var(--line-height);
 }
+
 .button {
   font-size: 20px;
   line-height: 1.2;
+  font-family: inherit;
+  cursor: pointer;
 }
-/*
-  letter-spacing:normal;
-  font-style: normal;
-  font-weight: 400;
-  text-lagin:center;*/
+
+.links-header,
+.links-section {
+  list-style: none;
+}
